@@ -10,6 +10,7 @@ x = [1, 2, 3, 4, 5]  # iteratable
 y = [2, 2, 2]  # another iterable of different length
 print(type(x))
 
+
 newX = list(map(lambda x, y: (x % 2)*y, x, y))
 
 
