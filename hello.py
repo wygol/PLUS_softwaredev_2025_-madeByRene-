@@ -1,5 +1,5 @@
 import urllib3
-
+import fancyModule
 
 if __name__ == "__main__":
     print("hello")
@@ -26,3 +26,10 @@ print(z)
 
 response = urllib3.request("GET", "https://www.vum.co.at/")
 print(response.status)
+
+
+fib = fancyModule.generate_fibonacci(20)
+print("fib: {0}".format(fib))
+
+squared = fancyModule.square_iterable(fib)
+print("squared: {0}".format(squared))
