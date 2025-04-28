@@ -34,5 +34,5 @@ print("fib: {0}".format(fib))
 squared = fancyModule.square_iterable(fib)
 print("squared: {0}".format(squared))
 
-moduloList = fancyModule.modulo_iterable(fib, 3)
+moduloList = fancyModule.modulo_iterable(fib, 7)
 print("moduloList: {0}".format(moduloList))

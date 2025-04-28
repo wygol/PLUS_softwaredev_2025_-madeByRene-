@@ -7,10 +7,15 @@ def generate_fibonacci(n: int) -> list:
     """
     if n <= 0:
         return []
-    fibonacci = [0, 1]
-    for _ in range(2, n):
-        fibonacci.append(fibonacci[-1] + fibonacci[-2])
-    return fibonacci[:n]
+    elif n == 1:
+        return [0]
+    elif n == 2:
+        return [0, 1]
+    else:
+        fibonacci = [0, 1]
+        for _ in range(2, n):
+            fibonacci.append(fibonacci[-1] + fibonacci[-2])
+        return fibonacci[:n]
 
 
 print(generate_fibonacci(20))
