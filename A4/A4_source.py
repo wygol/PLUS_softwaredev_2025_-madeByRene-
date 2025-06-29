@@ -47,6 +47,10 @@ with rio.Env():
         # the masks could be exported for further analysis
         show(healthyVeg)
 
+        # applying the newly created masks to the ndvi raster
+        # the filters allow to smoothen the data overall so that it is easier for machines to detect patterns and see differences
+        # this can be best seen when comparing the normal ndvi raster with edge filter (check the pngs)
+
         highFiltered = A4_functions.highPassFilter(ndvi)
         lowFiltered = A4_functions.lowPassFilter(ndvi)
         edges = A4_functions.edgeDetectionFilter(ndvi)
